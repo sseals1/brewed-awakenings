@@ -1,6 +1,7 @@
 import { Employees } from "./Employees.js"
-import { Orders } from "./Order.js"
+import { Orders } from "./Orders.js"
 import { Products } from "./Products.js"
+
 
 const mainContainer = document.querySelector("#container")
 
@@ -15,12 +16,13 @@ const applicationHTML = `
         <h2>Products</h2>
         ${Products()}
     </section>
-</article>
-
-<article class="orders">
-    <h2>Orders</h2>
-    ${Orders()}
-</article>
+    </article>
+    <section>
+    <article class="orders">
+        <h2>Orders</h2>
+        ${Orders()}
+    </article>
+    </section>
 `
 
 mainContainer.innerHTML = applicationHTML
